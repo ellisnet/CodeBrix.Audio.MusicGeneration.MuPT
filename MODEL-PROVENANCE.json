@@ -1,6 +1,6 @@
 {
   "schema": "codebrix.model-provenance/1",
-  "stagedAtUtc": "2026-09-20T21:03:58.5513365Z",
+  "stagedAtUtc": "2026-09-21T04:40:02.5394523Z",
   "upstream": {
     "name": "hf.co/m-a-p/MuPT-v1-8192-190M",
     "repository": "m-a-p/MuPT-v1-8192-190M",
@@ -8,7 +8,7 @@
     "requestedRevision": "bf8f270d11683f65aa83ccebc2e756b782b795d8",
     "resolvedRevision": "bf8f270d11683f65aa83ccebc2e756b782b795d8",
     "source": "hf.co",
-    "pulledAtUtc": "2026-09-20T21:03:55.9957537Z",
+    "pulledAtUtc": "2026-09-21T04:39:57.6602764Z",
     "licenseId": "apache-2.0",
     "licenseSource": "https://huggingface.co/m-a-p/MuPT-v1-8192-190M",
     "format": "pytorch",
@@ -93,7 +93,7 @@
       "storedName": "hf.co/m-a-p/MuPT-v1-8192-190M:gguf-q4_k_m",
       "derivedFrom": "hf.co/m-a-p/MuPT-v1-8192-190M:gguf-auto",
       "tool": "CodeBrix.Ollama.ModelRunner",
-      "toolVersion": "llama.cpp b10221 (815a2a5915f22ce6a760c676389c5dfe8535c08f) | ggml 0.18.0 | linux-x64 | built 2026-09-16 05:07:04 UTC in codebrix-llama-build-x86_64 (AlmaLinux 8.10 (Cerulean Leopard)) | cc (GCC) 14.2.1 20250110 (Red Hat 14.2.1-11)",
+      "toolVersion": "llama.cpp b10221 (815a2a5915f22ce6a760c676389c5dfe8535c08f) | ggml 0.18.0 | win-x64 | built 2026-09-16 06:25:25 UTC on Microsoft Windows 11 Pro (AMD64) | Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36257 for x64",
       "settings": {
         "type": "q4_k_m"
       }
@@ -111,8 +111,8 @@
     "totalBytes": 123149152
   },
   "stagedOn": {
-    "operatingSystem": "LMDE 7 (gigi)",
-    "runtimeIdentifier": "linux-x64",
+    "operatingSystem": "Microsoft Windows 10.0.26200",
+    "runtimeIdentifier": "win-x64",
     "processArchitecture": "X64",
     "processor": "12th Gen Intel(R) Core(TM) i7-12850HX",
     "processorCount": 24,
