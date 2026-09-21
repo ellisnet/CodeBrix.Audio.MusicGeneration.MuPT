@@ -427,3 +427,11 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Model staging (tools/ModelStager). Everything the stager downloads, converts and quantizes stays
+# inside the repository and out of git; only staging/README.txt and the staged artifacts under
+# staging/output are meant to be seen by a human, and the artifacts are far too large for git.
+staging/download/
+staging/store/
+staging/output/
+staging/tmp/
