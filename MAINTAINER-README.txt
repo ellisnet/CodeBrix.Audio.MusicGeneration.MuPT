@@ -100,5 +100,9 @@ prepared model package uses standard UTC versioning (1.0.266.218); inspection,
 all direct/intermediary consumer layouts and generation/audio from packaged
 artifacts pass. Accepted model hashes and Windows provenance are unchanged.
 See TestResults/published-core-1.0.266.178-* and the session PLAN for evidence.
-The model package is prepared for Jeremy's publication; it has not been published
-by this session. The previous package listening acceptances remain in effect.
+Jeremy subsequently published MuPT 1.0.266.257. MusicGeneration's core test suite
+now references that published package and uses its copied assets without a model
+path variable. All 20 short MuPT checks run normally; core Debug/Release and the
+affected direct/intermediary consumer checks pass. Long/audible tests remain
+opt-in, and the previous listening acceptance remains in effect. See the session
+PLAN and core TestResults/published-mupt-1.0.266.257-* for the adoption evidence.
