@@ -18,8 +18,8 @@
     anything that ships. Both packages come from nuget.org; nothing here reaches anywhere else.
   -->
   <ItemGroup>
-    <PackageReference Include="CodeBrix.Ollama.ModelManager.MitLicenseForever" Version="1.0.262.1044" />
-    <PackageReference Include="CodeBrix.Ollama.ModelRunner.MitLicenseForever" Version="1.0.262.1044" />
+    <PackageReference Include="CodeBrix.Ollama.ModelManager.MitLicenseForever" Version="1.0.266.110" />
+    <PackageReference Include="CodeBrix.Ollama.ModelRunner.MitLicenseForever" Version="1.0.266.110" />
   </ItemGroup>
 
 </Project>

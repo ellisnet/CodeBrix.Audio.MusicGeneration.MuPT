@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <CodeBrixMuPTAssetsDirectory>$(MSBuildThisFileDirectory)../../staging/output/</CodeBrixMuPTAssetsDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/CodeBrix.Audio.MusicGeneration.MuPT/CodeBrix.Audio.MusicGeneration.MuPT.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="4.0.0" PrivateAssets="all" />
+    <PackageReference Include="xunit.v3" Version="4.0.1" />
+    <PackageReference Include="SilverAssertions.ApacheLicenseForever" Version="1.0.248.1071" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../LICENSE" Link="Models/CodeBrix.Audio.MusicGeneration.MuPT/LICENSE" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../THIRD-PARTY-NOTICES.txt;../../MODEL-CARD.md;../../MODEL-PROVENANCE.json" Link="Models/CodeBrix.Audio.MusicGeneration.MuPT/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Import Project="../../src/CodeBrix.Audio.MusicGeneration.MuPT/buildTransitive/net10.0/CodeBrix.Audio.MusicGeneration.MuPT.ApacheLicenseForever.targets" />
+</Project>

@@ -5,7 +5,20 @@
     <File Path="LICENSE" />
     <File Path="MODEL-PROVENANCE.json" />
     <File Path="README.md" />
+    <File Path="README-INDEX.txt" />
+    <File Path="AGENT-README.txt" />
+    <File Path="MAINTAINER-README.txt" />
+    <File Path="EXTRAS-README.txt" />
+    <File Path="THIRD-PARTY-NOTICES.txt" />
+    <File Path="MODEL-CARD.md" />
+    <File Path="icon-codebrix-128.png" />
     <File Path="staging/README.txt" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/CodeBrix.Audio.MusicGeneration.MuPT/CodeBrix.Audio.MusicGeneration.MuPT.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CodeBrix.Audio.MusicGeneration.MuPT.Tests/CodeBrix.Audio.MusicGeneration.MuPT.Tests.csproj" />
   </Folder>
   <Folder Name="/Tools/">
     <Project Path="tools/ModelStager/ModelStager.csproj" />

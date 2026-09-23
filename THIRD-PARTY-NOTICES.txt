@@ -1,0 +1,19 @@
+CodeBrix.Audio.MusicGeneration.MuPT: model and source notices
+===================================
+
+Wrapper code: Copyright (c) 2026 Jeremy Ellis and contributors, Apache-2.0.
+Complete license text: LICENSE (LICENSE.txt beside the deployed model).
+
+Model publisher: m-a-p/MuPT-v1-8192-190M
+Pinned source: https://huggingface.co/m-a-p/MuPT-v1-8192-190M/tree/bf8f270d11683f65aa83ccebc2e756b782b795d8
+The publisher identifies the model license as Apache-2.0 in its model card.
+MODEL-CARD.md is the original, unmodified README from that revision. Its SHA256
+is 3e7b3241c82e045a87fcc6c6f182703af68409f7c82b459b7c3d4c12fe5eb563. The complete model card and license travel with the assets.
+
+Modifications: checkpoint converted to GGUF and quantized to Q4_K_M.
+MODEL-PROVENANCE.json records inputs, hashes, settings, tool versions and staging
+platform. Inference artifacts total 123,149,152 bytes. No training data is included.
+
+The package does not contain the upstream training implementation or a Python
+runtime. Runtime inference comes through the MusicGeneration dependency and its
+ModelRunner package; those packages carry their own component notices.

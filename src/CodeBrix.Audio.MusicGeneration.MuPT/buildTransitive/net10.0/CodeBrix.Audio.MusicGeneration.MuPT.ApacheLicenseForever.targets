@@ -1,0 +1,16 @@
+<Project>
+  <!-- Follows FluidR3Gm's transitive asset pattern, with a model-specific output directory. -->
+  <PropertyGroup>
+    <CodeBrixMuPTCopyAssetsToOutput Condition="'$(CodeBrixMuPTCopyAssetsToOutput)' == ''">true</CodeBrixMuPTCopyAssetsToOutput>
+    <CodeBrixMuPTAssetsDirectory Condition="'$(CodeBrixMuPTAssetsDirectory)' == ''">$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', '..', '..', 'assets'))</CodeBrixMuPTAssetsDirectory>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(CodeBrixMuPTCopyAssetsToOutput)' == 'true'">
+    <None Include="$(CodeBrixMuPTAssetsDirectory)**/*">
+      <Link>Models/CodeBrix.Audio.MusicGeneration.MuPT/%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Pack>false</Pack>
+      <Visible>false</Visible>
+    </None>
+  </ItemGroup>
+</Project>
