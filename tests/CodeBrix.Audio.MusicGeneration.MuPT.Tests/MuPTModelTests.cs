@@ -27,7 +27,11 @@ public class MuPTModelTests
         // Assert
         files.Keys.Should().BeEquivalentTo(MuPTModel.FileNames);
         foreach (var pair in files)
-            pair.Value.Should().Be(Path.Combine(root, MuPTModel.RelativeModelDirectory, pair.Key));
+        {
+            // Segments are combined separately so the expectation uses the native separator on every OS.
+            Path.IsPathRooted(pair.Value).Should().BeTrue();
+            pair.Value.Should().Be(Path.Combine(root, "Models", "CodeBrix.Audio.MusicGeneration.MuPT", pair.Key));
+        }
         MuPTModel.RelativeModelDirectory.Should().Be("Models/CodeBrix.Audio.MusicGeneration.MuPT");
         var mutable = (IDictionary<string, string>)files;
         Action change = () => mutable.Add("extra", "elsewhere");
