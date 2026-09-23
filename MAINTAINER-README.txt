@@ -22,13 +22,11 @@ Read README-INDEX.txt, then AGENT-README.txt in full before editing. Follow the
 standard coding-agent pointers. Do not enable Nullable or ImplicitUsings. Tests
 use xunit.v3 4.0.1 and SilverAssertions.ApacheLicenseForever.
 
-The PHASE-4-PUBLISH dependency marker in the shipping csproj must be replaced
-with the validated, published MusicGeneration version. Until that package is
-published, release gates remain pending. Jeremy authorized temporary local core/model
-NuGets for validation on 2026-09-22. Pass -p:MusicGenerationPackageVersion=<review-version>
-and the explicit local feeds during restore/build/test. Never publish these review
-packages or add a sibling ProjectReference. The source marker remains until a
-published MusicGeneration version is validated.
+The shipping project references published MusicGeneration 1.0.266.178. Restore
+from nuget.org; no local core package or version override is required. Keep this
+as a NuGet dependency, never a sibling ProjectReference. Jeremy authorized local
+model packages for prepublication consumer validation; their dependency chain now
+uses published MusicGeneration, Audio, ModestSynth and ModelRunner packages.
 
     dotnet restore CodeBrix.Audio.MusicGeneration.MuPT.slnx
     dotnet test --solution CodeBrix.Audio.MusicGeneration.MuPT.slnx -c Debug
@@ -93,3 +91,14 @@ the session PLAN records final gate status and package identities.
 The short copied-artifact generation test is part of the ordinary suite. It needs
 no path variable because the build already requires and copies the staged model.
 Long renders and audible playback stay separate opt-in checks.
+
+PUBLISHED CORE VALIDATION — 2026-09-22
+------------------------------------
+The dependency is now MusicGeneration 1.0.266.178 from nuget.org. Ordinary
+Debug/Release suites pass without a version override or local core feed. The
+prepared model package uses standard UTC versioning (1.0.266.218); inspection,
+all direct/intermediary consumer layouts and generation/audio from packaged
+artifacts pass. Accepted model hashes and Windows provenance are unchanged.
+See TestResults/published-core-1.0.266.178-* and the session PLAN for evidence.
+The model package is prepared for Jeremy's publication; it has not been published
+by this session. The previous package listening acceptances remain in effect.

@@ -72,13 +72,11 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <!-- PHASE-4-PUBLISH: replace this marker with the first validated published MusicGeneration version. -->
-    <MusicGenerationPackageVersion Condition="'$(MusicGenerationPackageVersion)' == ''">0.0.0-unpublished</MusicGenerationPackageVersion>
     <ModelArtifactsDirectory Condition="'$(ModelArtifactsDirectory)' == ''">$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)', '..', '..', 'staging', 'output'))</ModelArtifactsDirectory>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CodeBrix.Audio.MusicGeneration.MitLicenseForever" Version="$(MusicGenerationPackageVersion)" />
+    <PackageReference Include="CodeBrix.Audio.MusicGeneration.MitLicenseForever" Version="1.0.266.178" />
   </ItemGroup>
 
   <ItemGroup>
