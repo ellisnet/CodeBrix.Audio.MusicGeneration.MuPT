@@ -19,4 +19,4 @@ Inference assets: **117.44 MiB** before NuGet compression. File size is not a ru
 
 See [README-INDEX.txt](README-INDEX.txt) for consumer and maintainer documentation, and [MODEL-PROVENANCE.json](MODEL-PROVENANCE.json) for the reproducible recipe. The wrapper and model are Apache-2.0 licensed; attribution is in [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt).
 
-Release preparation is in progress. The published MusicGeneration dependency and final consuming-package gates must be verified before publication.
+Published on nuget.org: `dotnet add package CodeBrix.Audio.MusicGeneration.MuPT.ApacheLicenseForever` (namespace `CodeBrix.Audio.MusicGeneration.MuPT`).

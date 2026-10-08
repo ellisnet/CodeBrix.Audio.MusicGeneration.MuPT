@@ -2,7 +2,7 @@ CodeBrix.Audio.MusicGeneration.MuPT: model and source notices
 ===================================
 
 Wrapper code: Copyright (c) 2026 Jeremy Ellis and contributors, Apache-2.0.
-Complete license text: LICENSE (LICENSE.txt beside the deployed model).
+Complete license text: LICENSE (also deployed as LICENSE beside the model).
 
 Model publisher: m-a-p/MuPT-v1-8192-190M
 Pinned source: https://huggingface.co/m-a-p/MuPT-v1-8192-190M/tree/bf8f270d11683f65aa83ccebc2e756b782b795d8
